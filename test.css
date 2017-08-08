@@ -1,0 +1,151 @@
+body{ 	
+	color:red;
+	text-align: justify;
+	background-image:url(assets/fond.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+@font-face{ 
+	font-family:"perso";
+	SRC:url("fonts/FRANCEN.ttf") format("truetype");
+}
+//nav{ // pas très utile
+	width:400px;
+	height:20px;
+	background:yellow;
+	border:1px solid #ff0000;
+	position:absolute;
+	margin-left: 10px;
+	margin-top: 0px;
+}
+nav ul {
+	list-style-type:none;
+	margin:0 auto;
+	padding-left:0px;
+}
+nav ul li {
+	float:left;
+	width:100px;
+	text-align: center;
+	border: 1px solid blue;
+	margin-left:5px;
+}
+nav ul li a {
+display:block; 
+// sert à colorer le block complet et non seulement le fond du mot lorsque le lien est survolé (a:hover)
+//line-height:20px; si pas de règle pour le bloc nav
+}
+nav ul li a:hover {
+	color: red;
+	background-color: blue;
+}
+div {
+	font-family: "perso",Arial, Times, serif;
+	padding:10px;
+	background-image:url("/assets/fond.jpg");
+	background-repeat:repeat;
+	
+	// terminer font-familly par serif, sans-serif ou monotype
+	// marge interne
+}
+em{
+	text-decoration:underline;
+}
+a:link, a:visited{
+	text-decoration:none;
+	color:green;
+	}
+a:hover{text-decoration:line-through;}
+ a img{
+	border:none;
+	// donne rien, à revoir img dans a
+}
+.img{text-align:center;}
+.imgDroit{
+	float:left;
+	padding-bottom:5px;
+	padding-right:5px;
+	padding-top:15px;
+	}
+.first {
+	color:hls(229,94,91);
+	background-color:yellow;
+	border-style: solid;
+	border-width:4px;
+	border-color:brown;
+	font-size:14px;
+	line-height:150%;
+	text-indent:14px;
+	margin: 10px;
+	margin-top : 20px;	
+	// marge externe
+}
+
+ul li{font-weight: bold;}
+ul li ul li {
+	font-weight: normal;
+	color:gray;
+}
+hr{
+	width:50%;
+	color:blue;
+	background-color:blue;
+	background-image:url("assets/deco.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	height:63px;
+	//margin:0 auto; // pour centrer : inutile
+}
+.second {
+		background-color:gray;
+}
+#r1 {
+	color:green;
+	padding-top:0px;
+}
+#sexe{
+	background:yellow;
+	text-align: center;
+	margin:10px;
+}
+label {
+	width:100px;
+	float:left;
+	margin-right:10px;
+	text-align:right;
+	clear:left; // stop le float pour la ligne suivante
+}
+fieldset {
+	margin: 0px;
+	padding: .5em;
+	background: #FF9900;//jaune
+	border: 1px solid #000000;
+	border-radius: 10px;
+}
+legend {
+	padding: .2em;
+	background-color: #EBEBFF;
+	font-weight: bold;
+	color: #000000;
+	border: 1px solid #000000;
+}
+input {
+	border: 1px solid #000000;
+	font-weight: bold;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+	padding:1px;
+}
+input:focus {	
+font-weight: bold;
+color: red;
+background-color: #0F0
+}
+#r2{
+	-moz-column-count: 3;
+-webkit-column-count: 3;
+-moz-column-gap: 10px;
+-webkit-column-gap: 10px;
+-moz-column-rule: 5px solid #ddccb5;
+-webkit-column-rule: 5px solid #ddccb5;
+}

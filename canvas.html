@@ -1,0 +1,31 @@
+<! DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>balise canvas minimale</title>
+		<script type = "text/javascript">
+			function doCanvas(){
+				var monCanvas=document.getElementById('dessin');
+				if (monCanvas.getContext){
+					var ctx=monCanvas.getContext('2d');
+					ctx.fillStyle='red';
+					ctx.fillRect(0,0,200,50);
+					ctx.fillStyle='blue';
+					var x= 630;
+					var y=450;
+					ctx.fillRect(x,y,x+100,y+100);
+				} else{
+					alert ("canvas non supporté");
+				}
+			}
+		</script>
+	</head>
+	<body onload="doCanvas();">
+		<!--canvas-->
+		<canvas id="dessin" width="640" height="480">
+			Texte pour les navigateurs ne supportant pas canvas
+		</canvas>
+		
+
+	</body>
+</html>

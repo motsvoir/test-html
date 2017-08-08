@@ -1,0 +1,146 @@
+<! doctype html>
+<html lang = "fr">
+		<!-- ne pas commencer un id par un chiffre //-->
+		<!-- ceci est un commentaire
+		//-->
+	<head>
+		<meta charset="UTF-8"/>
+		<title> Test&mdash;basique </title>
+		<link href = "test.css" type = "text/css" rel = "stylesheet" />
+		<script type = "text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div id= "top">
+		
+		<script type="text/javascript">
+			<!--
+				alert ("bonjour"); // l'insertion dans un commentaire semble inutile
+			//-->
+		</script>
+		<noscript> javascript voulait vous dire bonjour ! activez javascipt et rechargez la page 
+		</noscript>
+		
+		<nav>
+			<ul>
+				<li> <a href="index.html">Home</a></li>
+				<li><a href = "products.html"> produits</a></li>
+				<li><a href = "societe.html">société</a></li>
+			</ul>
+		</nav>
+		</div>
+		
+		<div >
+			<p id= "dateDuJour">
+				<button onclick = "ecrire();">demander</button>
+			</p>
+		</div>
+
+		<div class="first">
+			<ul id = "fruits">
+				<li> fruits
+					<ul>
+						<li>Tomatoes</li>
+						<li>Onion</li>
+						<li>Garlic</li>
+					</ul>
+				</li>
+				<li> autres items </li>
+			</ul>
+
+			<p id = "r1">  Cultivat&#232;e à the habit of early rising. It is unwise to keep the head long on a level with the feet! <img class = "imgDroit" src ="assets/musique.jpg" width= "80" height = "102" alt = "musique"/></p> 
+			<hr/>
+			<p id = "r2" > &amp; <em><strong>Books</strong></em> are the carriers of civilization &#8482;. <br/> Without books, history is silent, literature dumb, science crippled, thought and speculation at a standstill. I think that there is nothing, not even crime, more opposed to poetry, to philosophy, ay, to life itself than this incessant business. Without books, history is silent, literature dumb, science crippled, thought and speculation at a standstill. I think that there is nothing, not even crime, more opposed to poetry, to philosophy, ay, to life itself than this incessant business.</p>
+			
+			<p><a href="mailto:test@free.fr?subject=information demandée">me contacter</a></p>
+		</div>
+		<ul>
+			<li>Tomatoes</li>
+			<li>Onion</li>
+			<li>Garlic</li>
+		</ul>
+
+		<div class = "second" id = "part2">
+			<p id="sexe"> quel est votre sexe ? <br/>
+				<input type="radio" name="genre" id="M" value = "M" checked="checked" />
+				<label for="M"> mâle </label>
+				<input type="radio" name="genre" id="F" value = "F" />
+				<label for="F"> femme </label>
+				<br/>
+				<input type = "submit" name = "genre" value = "soumettre"/>
+			</p>
+			
+			<p id = "r3"> Gute Nacht </p>
+			<p id = "r4"> Aufwiederseen </p>
+			<p> bla-bla </p>
+			<p> bla-bla </p>
+			<p> bla-bla </p>
+			<p> bla-bla </p>
+			<p> bla-bla </p>
+			<p> bla-bla </p>
+			<p> bla-bla </p>
+			<p><a href = "#top">bla-bla</a></p>
+			<p class="img"><a href="#part2"><img src ="assets/musique.jpg" width= "161" height = "203" alt = "musique"/></a></p>
+		</div>
+		<div>
+			<form name = "perso" method=”post” action=”“>
+				<fieldset>
+					<legend>Personal details</legend>
+					<p>
+						<label for=”Name”> Name:</label>
+						<input type=”text” name=”name” id=”Name” />
+					</p>
+					<p>
+						<label for=”Email”>Email:</label>
+						<input type=”text” name=”email” id=”Email” />
+					</p>
+					<p>
+						<label for=”Tel”>Telephone:</label>
+						<input type=”text” name=”tel” id=”Tel” />
+					</p>
+				</fieldset>
+				<p id = "bouton">
+					<input type="submit" name=”valider” />
+				</p>
+			</form>
+		</div>
+		
+		<div id="slider">
+			<label for="priority">Priorité</label>
+			<input type= "range" min="0" max= "10" name= "priority" value="0" id ="priority"/>
+		</div>
+		<div id = "compteur">
+			<label for="estimated_hours">compteur</label>
+			<input type="number" name="estimated_hours" min="0" max="1000" id="estimated_hours"/>
+		</div>
+		<div id="calendrier">
+			<label for="start_date">calendrier</label>
+			<input type= "date" name="start_date" id ="start_date"value="201-08-01"/>
+			<!-- le calendrier intégral est montré sur chrome, pas sur firefox //-->
+		</div>
+		<div id="mail">
+			<label for="email">Email contact</label>
+			<input type="email" name="email" id="email"/>
+			<!-- firefox indique s'il manque le @, pas chrome //-->
+			<!-- tag intéressant sur les mobiles car le clavier virtuel s'adapte à l'entrée d'une adresse mail //-->
+		</div>
+		<div id = "champ url">
+			<label for="url">Staging URL</label>
+			<input type="url" name="url" id="url"/>
+			<!-- mêmes remarques que pour le mail //-->
+		</div>
+		<div id = "palette de couleur">
+				<label for="project_color">palette de couleur</label>
+				<input type="color" name="project_color" id="project_color"/>
+		</div>
+		
+		<div id="audiovideo">
+			<audio controls = "controls" loop="loop" preload = "none">
+				<source src="assets/retournement.mp3" type = "audio/mp3"/>
+			</audio>
+			<video width="640" height="478" controls=”controls”>
+				<source src= "assets/amis.mp4" type="video/mp4" />
+			</video>
+		</div>
+		
+	</body>
+</html>
